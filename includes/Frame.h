@@ -8,6 +8,7 @@ class Frame {
     void release();
     bool checkOccuping() const;
     int getOccupingPage() const;
+    int getFrameNumber() const;
 
   private:
     int frameNumber;

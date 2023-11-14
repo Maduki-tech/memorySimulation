@@ -1,4 +1,4 @@
-#include "../includes/Frame.h"
+#include "Frame.h"
 
 Frame::Frame(int num) : frameNumber(num), occupyingPage(-1), isOccupied(false) {}
 
@@ -18,4 +18,8 @@ bool Frame::checkOccuping() const {
 
 int Frame::getOccupingPage() const {
     return occupyingPage;
+}
+
+int Frame::getFrameNumber() const {
+    return frameNumber;
 }
